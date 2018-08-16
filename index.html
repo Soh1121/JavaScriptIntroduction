@@ -6,19 +6,18 @@
 </head>
     <script>
         /*
-            関数: 複数の処理
+            即時関数
 
-            function 関数名() {
-                処理
-                return 返り値
-            }
+        (function (name) {
+            console.log("hello " + name);
+        })("Tom");
         */
 
-        function hello(name) {
-            return "hello " + name;
-        }
-        var greet = hello("Tom");
-        console.log(greet);
+        (function() {
+            var x = 10,
+                y = 20;
+            console.log(x + y);
+        })();
 
     </script>
 </html>
